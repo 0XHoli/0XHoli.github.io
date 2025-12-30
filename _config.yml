@@ -1,0 +1,27 @@
+theme: minima
+title: 0XHoli's TryHackMe Writeups
+description: Documenting my cybersecurity learning journey through TryHackMe rooms and notes.
+author: 0XHoli
+github_username: 0XHoli
+
+minima:
+  skin: classic
+  date_format: "%d %B %Y"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  writeups:
+    output: true
+    permalink: /:collection/:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "writeups"
+    values:
+      layout: "post"
+      category: "tryhackme"
